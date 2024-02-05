@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="pacey">
+    <div class="content"><!-- <h1><span></span></h1> -->
+    <table style="width: 80%; height: 80%;">
+    <tbody>
+    <tr style="height: auto;">
+    <td style="max-width: 60%; text-transform: uppercase;text-align: left;">
+    <h3 class="tohead sse">To: The Principal, <br/>{{schoolname}}</h3>
+    <p class="sse">Address: {{address}}</p>
+    <p class="sse">Contact: {{contact}}</p>
+    </td>
+    </tr>
+    <tr >
+    <td style="width:70%;text-align: center;text-transform: uppercase;">
+    <h3 style="color: #b56658; ">From : <span style="text-decoration: underline;"><strong><span style="color: #000000; text-decoration: underline;">MR S</span><span style="color: #ff0000; text-decoration: underline;">O</span><span style="color: #000000; text-decoration: underline;">FTWARES</span></strong></span></h3>
+    <p>Address:<strong> 10, Shanku Marg, Freeganj, </strong></p>
+    <p><strong>Ujjain- 456010</strong></p>
+    <p>Contact: <strong>+91-9981156525</strong></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <div class="sd" style="text-align: center;">&nbsp;</div>
+<style>
+    body{
+        height: 210mm;
+        width:297mm;
+    }
+    .pacey {
+    background-image: url('/home/vlad/code/pyth/Task/back.svg');
+    background-repeat: no-repeat;
+    /* align-items: self-start; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 100%; */
+    height: 100%;
+    align-items: center;
+/* width: 1122px; */
+/* height: 793px; */
+}
+
+.content {
+    display: flex;
+flex-direction: column;
+flex-flow: column;
+word-break: break-word;
+padding-top: 10px;
+  position:relative;
+  flex-wrap: wrap;
+  
+}
+
+table {
+    height: auto;
+    width: 35em;
+    border-collapse: collapse;
+    border-style: none;
+    background-color: #d8eaff00;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tbody {
+    vertical-align: middle;
+}
+
+
+.sd {
+    page-break-before: always;
+}
+.tohead, .sse{
+    font-family: sans-serif;
+    color:#5781a0;
+    text-transform: uppercase;
+}
+.sse {
+font-weight: 700;
+}
+.tohead{
+    font-weight: 800;
+}
+</style>
