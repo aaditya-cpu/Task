@@ -154,7 +154,7 @@ import re
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', force=True)
 
 # Load CSV into DataFrame
-csv_file = 'death.csv'  # Adjust the filename as necessary
+csv_file = 'returnedboxes.csv'  # Adjust the filename as necessary
 df = pd.read_csv(csv_file)
 
 # Trim spaces from column names and replace NaN values with empty strings
@@ -202,7 +202,7 @@ for index, row in df.iterrows():
     logging.info(f"Processed HTML for CRM ID: {row.get('CRM ID', 'Unknown')}")
 
 # Save the consolidated HTML content to a file
-with open('corrected_addres.html', 'w') as file:
+with open('returnedboxes.html', 'w') as file:
     file.write(consolidated_html)
 
 options = {
@@ -219,7 +219,7 @@ options = {
 
 # Convert HTML to PDF
 try:
-    pdfkit.from_file('corrected_addres.html', 'corrected_addres.pdf', options=options)
+    pdfkit.from_file('returnedboxes.html', 'returnedboxes.pdf', options=options)
     logging.info("PDF created successfully.")
 except Exception as e:
     logging.error(f"Error during PDF creation: {e}")
